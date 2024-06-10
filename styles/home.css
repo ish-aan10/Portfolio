@@ -19,14 +19,14 @@
 }
 
 .profile-image-container {
-    text-align: right;
-    padding-right: 10px;
+    text-align: center;
+    padding: 0 10px;
 }
 
 .profile-image {
     height: 300px;
     border-radius: 150px;
-    border: 5px solid white;
+    border: 5px solid rgb(104, 109, 118);
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.365);
 }
 
@@ -35,19 +35,28 @@
 }
 
 .head-text {
-    color: white;
+    color: rgb(104, 109, 118);
     line-height: normal;
     font-size: 40px;
     font-weight: bold;
-    text-align: left;
 }
 
 .name-text {
-    color: rgb(77, 243, 246);
+    color: rgb(220, 95, 0);
 }
 
 .description {
     margin-top: 15px;
     font-size: 20px;
     font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .profile {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    .heading {
+        text-align: center;
+    }
 }

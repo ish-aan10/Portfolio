@@ -5,6 +5,7 @@
 }
 
 .project-text {
+    color: rgb(55, 58, 64);
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -25,12 +26,13 @@
 }
 
 .project-container {
+    color: white;
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 425px;
+    max-width: 425px;
     border-radius: 15px;
-    background-color: silver;
+    background-color: rgb(55, 58, 64);
     box-shadow: 0 5px 10px 0 black;
 }
 
@@ -61,4 +63,10 @@
     font-size: 15px;
     padding-top: 2px;
     padding-right: 2px;
+}
+
+@media (max-width: 900px) {
+    .project-description {
+        display: none;
+    }
 }

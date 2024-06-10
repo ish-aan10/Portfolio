@@ -4,7 +4,7 @@
     color: white;
     left: 0;
     right: 0;
-    background-color: rgb(84, 47, 187);
+    background-color: rgb(55, 58, 64);
 }
 
 .edu-text {
@@ -29,15 +29,15 @@
     padding-right: 35px;
     padding-left: 15px;
     border-radius: 50px;
-    background-color: rgb(40, 32, 103);
+    background-color: rgb(220, 95, 0);
     box-shadow: 0 2px 8px 0px rgb(0, 0, 0);
     margin-bottom: 30px;
 }
 
 .edu-image {
-    background-color: rgb(91, 94, 166);
+    background-color: white;
     border-radius: 50px;
-    border: 4px solid white;
+    border: 4px solid rgb(104, 109, 118);
     margin-right: 20px;
 }
 
