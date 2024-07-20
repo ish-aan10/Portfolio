@@ -128,3 +128,12 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 505px) {
+    .navbar {
+        margin: 20px 30px;
+    }
+    .nav-menu li {
+        font-size: 20px;
+    }
+}

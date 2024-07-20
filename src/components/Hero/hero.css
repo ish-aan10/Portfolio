@@ -99,3 +99,23 @@
         margin-bottom: 50px;
     }
 }
+
+@media (max-width: 505px) {
+    .hero img {
+        margin-bottom: 20px;
+    }
+    .hero h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+    .hero h1 span {
+        font-size: 45px;
+    }
+    .hero p {
+        margin: 0;
+        width: 85%;
+    }
+    .hero-action {
+        flex-direction: column;
+    }
+}
