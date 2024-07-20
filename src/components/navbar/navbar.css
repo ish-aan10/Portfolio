@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&family=Satisfy&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-title {
+    text-decoration: none;
+    font-family: Playwrite CZ;
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(90deg, teal 30%, lime);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 160px;
+}
+
+.nav-menu li {
+    background: none;
+    cursor: pointer;
+}
+
+.nav-menu li div {
+    padding-bottom: 10px;
+    border-bottom: 4px solid black;
+}
+
+.nav-menu li:hover {
+    .border-gradient {
+        border-bottom: 4px solid;
+        border-image-slice: 1;
+    }
+    
+    .border-gradient-green {
+        border-image-source: linear-gradient(90deg, teal 30%, lime);
+    }
+}
+
+.nav-connect {
+    padding: 15px 40px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, teal 30%, lime);
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    font-family: Satisfy;
+    transition: 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.nav-connect .anchor-link {
+    color: black;
+}
+
+.nav-mob-close, .nav-mob-open {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+    .nav-connect {
+        display: none;
+    }
+    .nav-menu {
+        margin: 0;
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: rgb(44, 44, 44);
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li {
+        font-size: 26px;
+        padding-left: 60px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .nav-menu li div {
+        border-color: rgb(44, 44, 44);
+    }
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right: 35px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+}
