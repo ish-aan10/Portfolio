@@ -108,9 +108,10 @@
         width: 75%;
     }
     .footer-bottom-left {
-        font-size: 18px;
+        font-size: 14px;
     }
     .footer-bottom-right {
         gap: 25px;
+        font-size: 14px;
     }
 }
