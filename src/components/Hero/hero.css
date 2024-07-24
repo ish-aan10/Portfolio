@@ -42,7 +42,6 @@
     gap: 25px;
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 50px;
 }
 
 .hero-connect {
@@ -60,12 +59,38 @@
     color: black;
 }
 
+.hero-socials {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0 50px;
+}
+
+.hero-socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 10px 16px;
+    border-radius: 50px;
+    border: 3px solid white;
+    transition: 0.5s;
+}
+
+.hero-socials a:hover {
+    transform: scale(1.20);
+    border-color: black;
+    color: black;
+    background: linear-gradient(-45deg, teal, lime);
+}
+
 .hero-resume {
     border: 2px solid white;
+    font-family: Outfit;
+    color: white;
     border-radius: 50px;
     padding: 18px 45px;
     cursor: pointer;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 .hero-connect:hover {
@@ -96,7 +121,6 @@
     }
     .hero-action {
         gap: 16px;
-        margin-bottom: 50px;
     }
 }
 
@@ -117,5 +141,12 @@
     }
     .hero-action {
         flex-direction: column;
+    }
+    .hero-socials {
+        margin: 10px 0 50px;
+        gap: 30px;
+    }
+    .hero-socials a {
+        font-size: 24px;
     }
 }

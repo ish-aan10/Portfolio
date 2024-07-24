@@ -16,7 +16,7 @@ const Portfolio = () => {
             })}
         </div>
         <div className="mywork-showmore">
-            <p>show more <FontAwesomeIcon icon={faArrowRight} /> </p>
+            <a href="https://github.com/ish-aan10?tab=repositories">show more <FontAwesomeIcon icon={faArrowRight} /> </a>
         </div>
     </div>
   )

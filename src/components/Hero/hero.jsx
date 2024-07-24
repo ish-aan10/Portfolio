@@ -3,6 +3,9 @@ import "./hero.css";
 import profile_img from "../../assets/profile_image.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
@@ -15,7 +18,12 @@ const Hero = () => {
         <div className="hero-connect">
           <AnchorLink className="anchor-link" offset={50} href="#contact">Connect with Me</AnchorLink>
         </div>
-        <div className="hero-resume">Download CV <FontAwesomeIcon icon={faArrowRight} /></div>
+        <a className="hero-resume" href="../../assets/Ishaan Kumar Resume.pdf" download>Download CV <FontAwesomeIcon icon={faArrowRight} /></a>
+      </div>
+      <div className="hero-socials">
+          <a href="https://github.com/ish-aan10" className="social-links"><FontAwesomeIcon icon={faGithub} /></a>
+          <a href="https://www.instagram.com/__ish_aan10__/" className="social-links"><FontAwesomeIcon icon={faInstagram} /></a>
+          <a href="https://www.linkedin.com/in/ishaan-kumar-214004239/" className="social-links"><FontAwesomeIcon icon={faLinkedin} /></a>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import project_image_4 from "./project-4.png";
 const projects_data = [
     {
         p_no: 1,
-        p_name: "Online Learning Platform",
+        p_name: "EduQuest - An online learning platform",
         p_img: project_image_1
     },
     {

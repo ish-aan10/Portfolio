@@ -43,7 +43,7 @@
 
 .nav-menu li div {
     padding-bottom: 10px;
-    border-bottom: 4px solid rgba(0, 0, 0, 1);
+    border-bottom: 4px solid transparent;
 }
 
 .nav-menu li:hover {
@@ -107,9 +107,6 @@
         padding-left: 60px;
         flex-direction: row;
         gap: 20px;
-    }
-    .nav-menu li div {
-        border-color: rgba(44, 44, 44, 0.9);
     }
     .nav-mob-open {
         display: block;
