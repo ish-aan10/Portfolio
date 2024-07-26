@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+}
